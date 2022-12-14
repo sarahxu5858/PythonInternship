@@ -1,4 +1,3 @@
-from page_object.base_page import Page
 from page_object.header import Header
 from page_object.home_page import HomePage
 
