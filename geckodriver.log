@@ -1,0 +1,188 @@
+1671588411477	geckodriver	INFO	Listening on 127.0.0.1:64610
+1671588467602	geckodriver	INFO	Listening on 127.0.0.1:64632
+1671588707782	geckodriver	INFO	Listening on 127.0.0.1:64713
+1671588814967	geckodriver	INFO	Listening on 127.0.0.1:64756
+1671588828886	geckodriver	INFO	Listening on 127.0.0.1:64772
+1671588905677	geckodriver	INFO	Listening on 127.0.0.1:64809
+1671588963860	geckodriver	INFO	Listening on 127.0.0.1:64833
+1671589254472	geckodriver	INFO	Listening on 127.0.0.1:64905
+1671589344801	geckodriver	INFO	Listening on 127.0.0.1:64937
+1671589494994	geckodriver	INFO	Listening on 127.0.0.1:65005
+1671589622151	geckodriver	INFO	Listening on 127.0.0.1:65041
+1671589625232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65042" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofilelWNt1a"
+1671589625631	Marionette	INFO	Marionette enabled
+1671589625637	Marionette	INFO	Listening on port 65054
+Read port: 65054
+WebDriver BiDi listening on ws://127.0.0.1:65042
+1671589625756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1671589666862	geckodriver	INFO	Listening on 127.0.0.1:65070
+1671589672087	geckodriver	INFO	Listening on 127.0.0.1:65085
+1671589675164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65086" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofile0xjQTr"
+1671589675528	Marionette	INFO	Marionette enabled
+1671589675532	Marionette	INFO	Listening on port 65098
+WebDriver BiDi listening on ws://127.0.0.1:65086
+Read port: 65098
+1671589675670	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1671590918088	geckodriver	INFO	Listening on 127.0.0.1:65329
+1671590956014	geckodriver	INFO	Listening on 127.0.0.1:65454
+1671590959071	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65455" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofile6WKZIK"
+1671590959452	Marionette	INFO	Marionette enabled
+1671590959457	Marionette	INFO	Listening on port 65465
+Read port: 65465
+WebDriver BiDi listening on ws://127.0.0.1:65455
+1671590959595	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofile6WKZIK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65455/devtools/browser/7797e8c1-69b6-421a-a9d7-d08e27d2a944
+1671590969407	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1671590969842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671590971306	Marionette	INFO	Stopped listening on port 65465
+1671591024662	geckodriver	INFO	Listening on 127.0.0.1:49229
+1671591048018	geckodriver	INFO	Listening on 127.0.0.1:49316
+1671591057547	geckodriver	INFO	Listening on 127.0.0.1:49332
+1671591103428	geckodriver	INFO	Listening on 127.0.0.1:49379
+1671591106489	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49380" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileDHc8iN"
+1671591106881	Marionette	INFO	Marionette enabled
+1671591106886	Marionette	INFO	Listening on port 49390
+Read port: 49390
+WebDriver BiDi listening on ws://127.0.0.1:49380
+1671591107000	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileDHc8iN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49380/devtools/browser/7e291a41-f5d6-400a-8ec9-88f2ef6d6423
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+1671591111706	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671591112921	Marionette	INFO	Stopped listening on port 49390
+1671591168330	geckodriver	INFO	Listening on 127.0.0.1:49524
+1671591171394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "49525" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileOabhYy"
+*** You are running in headless mode.
+1671591171745	Marionette	INFO	Marionette enabled
+1671591171750	Marionette	INFO	Listening on port 49536
+WebDriver BiDi listening on ws://127.0.0.1:49525
+Read port: 49536
+1671591171988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileOabhYy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49525/devtools/browser/c5dbb045-67f0-450c-9fcd-ff54c0d310af
+1671591175391	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671591176371	Marionette	INFO	Stopped listening on port 49536
+1671592342977	geckodriver	INFO	Listening on 127.0.0.1:57963
+1671592346056	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "57964" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileAyfPqS"
+*** You are running in headless mode.
+1671592346666	Marionette	INFO	Marionette enabled
+1671592346671	Marionette	INFO	Listening on port 57975
+Read port: 57975
+WebDriver BiDi listening on ws://127.0.0.1:57964
+1671592346771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileAyfPqS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57964/devtools/browser/510d1859-d5c9-472b-8699-5971351d93f2
+1671592350840	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://cdn.shopify.com/shopifycloud/shopify_chat/storefront/shopifyChatV1.js?api_env=production&button_color=%2344aa48&button_style=icon&i=chat_bubble&p=bottom_right&shop_id=h1DSYOt7uF9w2IeI7kFLKQghjhowx6soV2KfMskdVzI&t=no_text&v=1&shop=heallo.myshopify.com, line 16: Error: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671592352169	Marionette	INFO	Stopped listening on port 57975
+1671592357010	geckodriver	INFO	Listening on 127.0.0.1:58080
+1671592360097	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileGvpcXI"
+1671592360502	Marionette	INFO	Marionette enabled
+1671592360508	Marionette	INFO	Listening on port 58093
+Read port: 58093
+WebDriver BiDi listening on ws://127.0.0.1:58081
+1671592360643	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileGvpcXI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58081/devtools/browser/51b1b216-4bea-477e-a872-b0c1e4aa6e44
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+1671592365107	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671592366064	Marionette	INFO	Stopped listening on port 58093
+!!! error running onStopped callback: TypeError: callback is not a function
+1671592378319	geckodriver	INFO	Listening on 127.0.0.1:58201
+1671592401942	geckodriver	INFO	Listening on 127.0.0.1:58243
+1671592405008	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58244" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileSfMIr5"
+1671592405458	Marionette	INFO	Marionette enabled
+1671592405464	Marionette	INFO	Listening on port 58254
+WebDriver BiDi listening on ws://127.0.0.1:58244
+Read port: 58254
+1671592405764	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileSfMIr5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58244/devtools/browser/4d3e44f7-c932-4d6f-9dcf-0e4f202364f2
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+1671592410193	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671592411135	Marionette	INFO	Stopped listening on port 58254
+1671592427080	geckodriver	INFO	Listening on 127.0.0.1:58359
+1671592430157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58360" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileJ5pWQP"
+1671592430521	Marionette	INFO	Marionette enabled
+1671592430526	Marionette	INFO	Listening on port 58371
+WebDriver BiDi listening on ws://127.0.0.1:58360
+Read port: 58371
+1671592430749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileJ5pWQP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58360/devtools/browser/9252da52-ebc0-4020-b195-3561ffb423cf
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+1671592433931	Marionette	INFO	Stopped listening on port 58371
+JavaScript error: resource://services-settings/Utils.jsm, line 240: TypeError: NetworkError: Network request failed
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\bobo\AppData\Local\Temp\rust_mozprofileJ5pWQP\protections.sqlite
+1671592456847	geckodriver	INFO	Listening on 127.0.0.1:58486
+1671592467751	geckodriver	INFO	Listening on 127.0.0.1:58502
+1671592604731	geckodriver	INFO	Listening on 127.0.0.1:58565
+1671592607801	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58566" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileRrTnwI"
+1671592608160	Marionette	INFO	Marionette enabled
+1671592608166	Marionette	INFO	Listening on port 58577
+WebDriver BiDi listening on ws://127.0.0.1:58566
+Read port: 58577
+1671592608398	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileRrTnwI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58566/devtools/browser/68fa6040-c5b1-4ffa-acf9-8998bf335a7a
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+1671592613136	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671592614433	Marionette	INFO	Stopped listening on port 58577
+1671592614478	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1671598021362	geckodriver	INFO	Listening on 127.0.0.1:60063
+1671598024308	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "60064" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofile06dI1p"
+*** You are running in headless mode.
+1671598024690	Marionette	INFO	Marionette enabled
+1671598024695	Marionette	INFO	Listening on port 60074
+Read port: 60074
+WebDriver BiDi listening on ws://127.0.0.1:60064
+1671598024809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofile06dI1p\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60064/devtools/browser/e77362e2-7953-4f0b-ab64-2c0160d07e65
+1671598028676	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671598030481	Marionette	INFO	Stopped listening on port 60074
+!!! error running onStopped callback: TypeError: callback is not a function
+1671684650948	geckodriver	INFO	Listening on 127.0.0.1:54813
+1671684654107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "54814" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileEtqdqc"
+*** You are running in headless mode.
+1671684654861	Marionette	INFO	Marionette enabled
+1671684654866	Marionette	INFO	Listening on port 54827
+Read port: 54827
+WebDriver BiDi listening on ws://127.0.0.1:54814
+1671684654993	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bobo\\AppData\\Local\\Temp\\rust_mozprofileEtqdqc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54814/devtools/browser/dd42a19e-ec1a-4d34-adda-03599a6b8aaa
+1671684661135	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript error: https://cdn.shopify.com/shopifycloud/shopify_chat/storefront/shopifyChatV1.js?api_env=production&button_color=%2344aa48&button_style=icon&i=chat_bubble&p=bottom_right&shop_id=h1DSYOt7uF9w2IeI7kFLKQghjhowx6soV2KfMskdVzI&t=no_text&v=1&shop=heallo.myshopify.com, line 16: Error: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script.app.flomllr.com/controller.js?stamp=1668684236386&shop=heallo.myshopify.com, line 740: TypeError: a is undefined
+1671684662893	Marionette	INFO	Stopped listening on port 54827
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 183: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+[Parent 24740, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559

@@ -1,12 +1,13 @@
-from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from seleniumpagefactory import PageFactory
 
 
+
 class Page(PageFactory):
 
-    def __init__(self, driver: webdriver):
+    def __init__(self, driver: WebDriver):
         self.driver = driver
         self.base_url = 'https://shop.cureskin.com/'
         self.wait = WebDriverWait(self.driver, 15)
@@ -21,7 +22,7 @@ class Page(PageFactory):
         return self.driver.find_element(*locator)
 
     def click(self, *locator):
-        self.driver.find_element(*locator).click()
+        self.find_element(*locator).click()
 
     def input_text(self, text, *locator):
         e = self.driver.find_element(*locator)

@@ -6,3 +6,4 @@ Feature: Test Scenarios for shop by function
     When Click Shop by product
     And Select Face Washes option
     Then Face Wash products display
+

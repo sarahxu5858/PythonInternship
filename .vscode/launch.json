@@ -19,6 +19,20 @@
                 "--no-capture-stderr",
                 "${file}"
             ],
+        },
+        {
+            "name": "Python: Behave all files",
+            "type": "python",
+            "request": "launch",
+            "module": "behave",
+            "console": "integratedTerminal",
+            "env": {
+                "BASE_DIR": "Your repository location",
+                   },
+            "args":[
+                "--no-capture",
+                "--no-capture-stderr"
+            ],
         }
     ]
 }
