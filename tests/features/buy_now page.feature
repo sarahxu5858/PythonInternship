@@ -3,8 +3,8 @@ Feature: Test Scenarios for buy now function
 @smoke
   Scenario: User can input a negative number wiht warning message
     Given Go to CureSkin Hair Pro Solution
-    When Input a negative number to the quntity field 
+    When Input a -1 to the quantity field 
     And Click on Buy it now button
-    Then A warning message for invalid quantity display 
+    Then Show order summary display
 
 # CureSkin Hair Pro Solution

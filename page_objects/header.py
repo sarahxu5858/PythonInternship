@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 
-from page_object.base_page import Page
+from .base_page import Page
 
 
 class Header(Page):
