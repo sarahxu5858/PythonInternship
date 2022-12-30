@@ -15,47 +15,47 @@ class MyContext(Context):
 
 
 # Allure
-    # behave -f allure_behave.formatter:AllureFormatter -o test_results/ tests/features/shop_by_facewash.feature
+    #behave -f allure_behave.formatter:AllureFormatter -o test_results/ tests/features/shop_by_facewash.feature
  
 
 def browser_init(context: MyContext, test_name: str):
     # options = FirefoxOptions()
     options = ChromeOptions()
-    # options.headless = True
-    # context.driver = Firefox(options=options, firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+    # # options.headless = True
+    # # context.driver = Firefox(options=options, firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
     
-    # run on mobile 
-    mobile_emulation = { "deviceName": "Nexus 5" }
+    # # run on mobile 
+    # mobile_emulation = { "deviceName": "Nexus 5" }
    
-    options.add_experimental_option("mobileEmulation", mobile_emulation)
+    # options.add_experimental_option("mobileEmulation", mobile_emulation)
     context.driver = Chrome(executable_path=binary_path, options=options)
 
-    # bstack_options = {
-    #     "osVersion": cap["osVersion"],
-    #     "buildName": cap["buildName"],
-    #     "sessionName": cap["sessionName"],
-    #     "userName": BROWSERSTACK_USERNAME,
-    #     "accessKey": BROWSERSTACK_ACCESS_KEY
-    # }
-    # if "os" in cap:
-    #     bstack_options["os"] = cap["os"]
-    # if "deviceName" in cap:
-    #     bstack_options['deviceName'] = cap["deviceName"]
-    # if "deviceOrientation" in cap:
-    #     bstack_options["deviceOrientation"] = cap["deviceOrientation"]
-    # if cap['browserName'] in ['ios']:
-    #     cap['browserName'] = 'safari'
-    # options = get_browser_option(cap["browserName"].lower())
-    # if "browserVersion" in cap:
-    #     options.browser_version = cap["browserVersion"]
-    # options.set_capability('bstack:options', bstack_options)
-    # if cap['browserName'].lower() == 'samsung':
-    #     options.set_capability('browserName', 'samsung')
-    # context.driver = Remote(
-    #     command_executor=URL,
-    #     options=options)
+    bstack_options = {
+        "osVersion": cap["osVersion"],
+        "buildName": cap["buildName"],
+        "sessionName": cap["sessionName"],
+        "userName": BROWSERSTACK_USERNAME,
+        "accessKey": BROWSERSTACK_ACCESS_KEY
+    }
+    if "os" in cap:
+        bstack_options["os"] = cap["os"]
+    if "deviceName" in cap:
+        bstack_options['deviceName'] = cap["deviceName"]
+    if "deviceOrientation" in cap:
+        bstack_options["deviceOrientation"] = cap["deviceOrientation"]
+    if cap['browserName'] in ['ios']:
+        cap['browserName'] = 'safari'
+    options = get_browser_option(cap["browserName"].lower())
+    if "browserVersion" in cap:
+        options.browser_version = cap["browserVersion"]
+    options.set_capability('bstack:options', bstack_options)
+    if cap['browserName'].lower() == 'samsung':
+        options.set_capability('browserName', 'samsung')
+    context.driver = Remote(
+        command_executor=f'https://{BROWSERSTACK_USERNAME}:{BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub',
+        options=options)
 
-    # context.driver = Remote(URL, desired_cap=desired_cap)
+    context.driver = Remote(URL, desired_capabilities=cap)
     context.driver.maximize_window()
     context.driver.implicitly_wait(10)
     context.app = Application(context.driver)
@@ -75,8 +75,8 @@ def after_step(context, step):
 
 
 def after_scenario(context: MyContext, scenario: Scenario):
-    # context.driver.execute_script(
-    #     'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "' + scenario.name + '"}}')
+    context.driver.execute_script(
+        'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "' + scenario.name + '"}}')
 
     context.driver.delete_all_cookies()
     context.driver.quit()
@@ -84,9 +84,9 @@ def after_scenario(context: MyContext, scenario: Scenario):
 # BrowswerStack setting
 
 
-BROWSERSTACK_USERNAME = "sarahxu_jpz3PN"
-BROWSERSTACK_ACCESS_KEY = "LbPLYyFk14z4B7fR52iv"
-URL = "https://hub.browserstack.com/wd/hub"
+BROWSERSTACK_USERNAME = ""
+BROWSERSTACK_ACCESS_KEY = ""
+URL = ""
 BUILD_NAME = "browserstack-build-1"
 capabilities = [
     {
