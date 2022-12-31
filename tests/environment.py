@@ -20,7 +20,7 @@ class MyContext(Context):
 
 def browser_init(context: MyContext, test_name: str):
     # options = FirefoxOptions()
-    # options = ChromeOptions()
+    options = ChromeOptions()
     # # options.headless = True
     # # context.driver = Firefox(options=options, firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
     
@@ -28,7 +28,7 @@ def browser_init(context: MyContext, test_name: str):
     # mobile_emulation = { "deviceName": "Nexus 5" }
    
     # options.add_experimental_option("mobileEmulation", mobile_emulation)
-    # context.driver = Chrome(executable_path=binary_path, options=options)
+    context.driver = Chrome(executable_path=binary_path, options=options)
 
     bstack_options = {
         "osVersion": cap["osVersion"],
@@ -51,16 +51,16 @@ def browser_init(context: MyContext, test_name: str):
     options.set_capability('bstack:options', bstack_options)
     if cap['browserName'].lower() == 'samsung':
         options.set_capability('browserName', 'samsung')
-    context.driver = Remote(
-        command_executor=f'https://{BROWSERSTACK_USERNAME}:{BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub',
-        options=options)
+    # context.driver = Remote(
+    #     command_executor=f'https://{BROWSERSTACK_USERNAME}:{BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub',
+    #     options=options)
 
     # context.driver = Remote(URL, desired_capabilities=cap)
     context.driver.maximize_window()
     context.driver.implicitly_wait(10)
     context.app = Application(context.driver)
 
-#
+
 
 def before_scenario(context, scenario: Scenario):
     browser_init(context, scenario.name)
@@ -75,8 +75,8 @@ def after_step(context, step):
 
 
 def after_scenario(context: MyContext, scenario: Scenario):
-    context.driver.execute_script(
-        'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "' + scenario.name + '"}}')
+    # context.driver.execute_script(
+        # 'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "' + scenario.name + '"}}')
 
     context.driver.delete_all_cookies()
     context.driver.quit()
@@ -84,8 +84,8 @@ def after_scenario(context: MyContext, scenario: Scenario):
 # BrowswerStack setting
 
 
-BROWSERSTACK_USERNAME = ""
-BROWSERSTACK_ACCESS_KEY = ""
+BROWSERSTACK_USERNAME = "sarahxu_jpz3PN"
+BROWSERSTACK_ACCESS_KEY = "LbPLYyFk14z4B7fR52iv"
 URL = ""
 BUILD_NAME = "browserstack-build-1"
 capabilities = [
