@@ -9,11 +9,12 @@ from .base_page import Page
 class Info(Page):
     
     # SHOWORDERSUMMARY = (By.XPATH, '//span[contains(text(),"Show order summary")]')
-    SHOWORDERSUMMARY = (By.CSS_SELECTOR, 'aside > button')
+    SHOWORDERSUMMARY = (By.ID, 'primary-header')
     def verify_show_order_summary_display(self):
         # try: 
-        self.verify_partial_text('Show order summary', *self.SHOWORDERSUMMARY)
+        self.verify_partial_text('Contact information', *self.SHOWORDERSUMMARY)
         # except NoSuchElementException:
         #     print(f'Expected "Show order summary", but got {actual_text}')
         # except Exception as e:
         #     print(e)
+        

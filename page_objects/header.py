@@ -11,6 +11,10 @@ class Header(Page):
      "logo_icon": ("CLASS_NAME", 'header__heading-logo'),
      "shop_by_conern_drpdown": ("CSS", 'details#Details-HeaderMenu-1 span')
     }
+    HAMBURGER_ICON = (By.CSS_SELECTOR, '.icon.icon-hamburger')
+    SHOP_BY_HAMBURGER_PRODUCT = (By.CSS_SELECTOR, '#Details-menu-drawer-menu-item-2')
+    HAMBURGER_FACE_WASHES_PROD = (By.CSS_SELECTOR, "[id='link-Shop by Product'] a[href='/collections/face-wash']")
+    
     SHOP_BY_CONCERN_DRPDOWN = (By.CSS_SELECTOR, 'details#Details-HeaderMenu-1 span')
     SHOP_BY_PRODUCT_DRPDOWN = (By.CSS_SELECTOR, 'details#Details-HeaderMenu-2 span')
     SHOP_BY_CATEGORY_DRPDOWN = (By.CSS_SELECTOR, 'details#Details-HeaderMenu-3 span')
@@ -22,7 +26,7 @@ class Header(Page):
     # DARK_SPOTS_PROD =
     # DRY_SKIN_PROD =
     # UNDER_EYE_CARE_PROD =
-    FACE_WASHES_PROD = (By.CSS_SELECTOR, '#HeaderMenu-MenuList-2 a[href="/collections/face-wash"')
+    FACE_WASHES_PROD = (By.CSS_SELECTOR, '#HeaderMenu-MenuList-2 a[href="/collections/face-wash"]')
     # SUNSCREENS_PROD =
     # SKINCARE_ROUTINE_PROD =
     # SKIN_REPAIR_PROD =
@@ -34,6 +38,12 @@ class Header(Page):
 
     def navigate_to_home_page(self):
         self.logo_icon.click()
+
+    def click_hamburger_icon(self):
+        return self.click(*self.HAMBURGER_ICON)
+
+    def click_shop_by_hamburger_product(self):
+        return self.click(*self.SHOP_BY_HAMBURGER_PRODUCT)
 
     def click_by_concern(self):
         return self.click(*self.SHOP_BY_CONCERN_DRPDOWN)
@@ -54,3 +64,6 @@ class Header(Page):
 
     def click_select_face_wash(self):
         return self.click(*self.FACE_WASHES_PROD)
+
+    def click_hamburger_face_washes_prod(self):
+        return self.click(*self.HAMBURGER_FACE_WASHES_PROD)
